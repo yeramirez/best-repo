@@ -1,0 +1,23 @@
+body {
+  font-family: 'Oxygen', sans-serif;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Montserrat', serif;
+}
+
+#side1 {
+  float: left;
+  width: 33.33%;
+}
+
+#side2 {
+  float: left;
+  width: 66.67%;
+}
+
+ul {
+  list-style-type: none;
+}
