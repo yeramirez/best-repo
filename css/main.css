@@ -56,7 +56,7 @@ a:active {
   color: #CBC9CF;
 }
 
-#first, #second, #third, #fourth {
+#first {
   padding-bottom: 50px;
   border-bottom: 1px solid #CBC9CF;
 }
