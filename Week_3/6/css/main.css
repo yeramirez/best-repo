@@ -1,0 +1,71 @@
+@media only screen and (min-width: 400px) and (max-width: 949px) {
+  body {
+    width: 100%;
+    margin: 0;
+    font-family: 'courier new', serif;
+  }
+
+  section {
+    background-color: #d3d3d3;
+  }
+
+  h1{
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  h3 {
+    color: #B4E3F8;
+    font-size: .9em;
+    text-transform: uppercase;
+  }
+
+  article:first-of-type {
+    width: 96%;
+    float: left;
+  }
+
+  article {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1440px) {
+  body {
+    width: 100%;
+    margin: 0;
+    font-family: 'courier new', serif;
+  }
+
+  section {
+    width: 97%;
+    margin: 0 auto;
+    background-color: #d3d3d3;
+    overflow: hidden;
+  }
+
+  h3 {
+    color: #B4E3F8;
+    font-size: .9em;
+    text-transform: uppercase;
+  }
+
+  article:first-of-type {
+    width: 70%;
+    float: left;
+  }
+
+  h1:first-of-type {
+    font-size: 3em;
+    width: 75%;
+  }
+
+  article:nth-child(2) {
+    float: right;
+    width: 25%;
+  }
+
+  article {
+    border: 1px solid red;
+  }
+}
