@@ -2,6 +2,7 @@
 ==================================================================================================== 
 ====================================================================================================
 */
+/* line 21, ../sass/vendor/_reset.scss */
 html, body, div, main, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,46 +24,173 @@ time, mark, audio, video,
   font: inherit;
   vertical-align: baseline;
   text-decoration: none;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
+/* line 37, ../sass/vendor/_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
+/* line 44, ../sass/vendor/_reset.scss */
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
+/* line 49, ../sass/vendor/_reset.scss */
 ol, ul {
-  list-style: none; }
+  list-style: none;
+}
 
+/* line 54, ../sass/vendor/_reset.scss */
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
+/* line 56, ../sass/vendor/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none; }
+  content: none;
+}
 
+/* line 63, ../sass/vendor/_reset.scss */
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
-/* 
+/*
+======================================================================
+VARIABLES
+====================================================================== */
+/*
+======================================================================
+STRUCTURE
+====================================================================== */
+/* line 9, ../sass/modules/_structure.scss */
+section {
+  width: 100%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 22, ../sass/modules/_structure.scss */
+section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*
 ======================================================================
 STYLEGUIDE
 ====================================================================== */
-/* 
+/* line 8, ../sass/partials/_styleguide.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 9, ../sass/partials/_styleguide.scss */
+body {
+  font: 1.6rem/1.4 sans-serif;
+}
+
+/*
 ======================================================================
 TYPOGRAPHY
 ====================================================================== */
-strong, em {
-  font-weight: 600; }
+/* line 23, ../sass/partials/_styleguide.scss */
+h1 {
+  font-size: 2.4rem;
+}
 
-/* 
+/* line 34, ../sass/partials/_styleguide.scss */
+strong, em {
+  font-weight: 600;
+}
+
+/*
 ======================================================================
 IMAGERY
 ======================================================================*/
-/* 
+/*
 ======================================================================
 FORMS
 ====================================================================== */
+/*
+======================================================================
+STRUCTURE
+====================================================================== */
+/* line 5, ../sass/partials/_structure.scss */
+body {
+  background-color: #FAFAFA;
+}
+
+/* line 12, ../sass/partials/_structure.scss */
+section {
+  padding: 50px 0;
+  border: 1px solid blue;
+}
+
+/*
+======================================================================
+ABOUT
+====================================================================== */
+/* line 5, ../sass/partials/_about.scss */
+#about article {
+  width: 50%;
+  float: left;
+  border: 1px solid green;
+}
+/* line 10, ../sass/partials/_about.scss */
+#about article:nth-of-type(2n+1) {
+  text-align: right;
+}
+
+/*
+======================================================================
+TEAM
+====================================================================== */
+/* line 5, ../sass/partials/_team.scss */
+#team {
+  text-align: center;
+}
+
+/* line 9, ../sass/partials/_team.scss */
+#team article {
+  width: 25%;
+  float: left;
+  border: 1px solid red;
+}
+/* line 14, ../sass/partials/_team.scss */
+#team article img {
+  width: 100px;
+  height: 100px;
+  background-color: #cccccc;
+  border-radius: 50%;
+}
+/* line 21, ../sass/partials/_team.scss */
+#team article p:last-child a {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #333333;
+  border-radius: 50%;
+  text-indent: -9999px;
+}
+/* line 30, ../sass/partials/_team.scss */
+#team article p:last-child a::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 10px);
+  left: calc(50% - 3px);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #f9f9f9;
+}
