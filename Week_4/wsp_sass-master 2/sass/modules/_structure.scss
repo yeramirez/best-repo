@@ -1,4 +1,4 @@
-/* 
+/*
 ======================================================================
 STRUCTURE
 ====================================================================== */
@@ -26,7 +26,15 @@ STRUCTURE
 
 // COLUMN SPAN - Twelve column grid system (container)
 // ======================================================================
+@mixin colspan ($columns, $align: left) {
+	width: 100%;
 
+	@include breakpoint (600px) {
+		float: $align;
+		width: calc(100%/12 * #{$columns});
+	}
+
+}
 
 // POSITION - Place element
 // ======================================================================
@@ -35,14 +43,19 @@ STRUCTURE
 // BREAKPOINTS - Dynamic media queries, mobile first
 // ======================================================================
 
+@mixin breakpoint ($point) {
+	@media (min-width: $point) {
+		@content;
+	}
+}
 
 // TRIANGLE - Border triangle
 // ======================================================================
 @mixin triangle($direction, $size, $color) {
 
-	width: 0; 
-	height: 0; 
-	
+	width: 0;
+	height: 0;
+
 	@if $direction == up {
 		border-left: $size solid transparent;
 		border-right: $size solid transparent;
@@ -64,18 +77,3 @@ STRUCTURE
 		border-left: $size solid $color;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
