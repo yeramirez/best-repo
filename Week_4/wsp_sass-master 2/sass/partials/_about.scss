@@ -1,0 +1,38 @@
+/*
+======================================================================
+ABOUT
+====================================================================== */
+#about article {
+	position: relative;
+	margin-bottom: 30px;
+	width: 50%;
+	float: left;
+	
+	&:nth-of-type(2n) {
+		padding-left: 90px;
+		text-align: left;
+	}
+	&:nth-of-type(2n+1) {
+		padding-right: 90px;
+		text-align: right;
+	}
+	
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: calc(50% - 35px);
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+	}
+	&#desktop::before { background: #e1e1e1 url('images/about-desktop.jpg') no-repeat center center; }
+	&#calculate::before { background: #e1e1e1 url('images/about-calculate.jpg') no-repeat center center; }
+	&#social::before { background: #e1e1e1 url('images/about-social.jpg') no-repeat center center; }
+	&#search::before { background: #e1e1e1 url('images/about-search.jpg') no-repeat center center; }
+	
+	&:nth-of-type(2n+1)::before { left: auto; right: 10px; }
+	&:nth-of-type(2n)::before { left: 10px; }
+	
+}
