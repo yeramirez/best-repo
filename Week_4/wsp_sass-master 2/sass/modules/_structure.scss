@@ -29,22 +29,42 @@ STRUCTURE
 @mixin colspan ($columns, $align: left) {
 	width: 100%;
 
-	@include breakpoint (600px) {
-		float: $align;
-		width: calc(100%/12 * #{$columns});
-	}
+	@each $point,$value in $breakpoints {
+		$i: index($columns, $point);
 
+		@if $i
+			and length($columns) > $i
+			and type-of( nth($columns, $i + 1) ) == number
+		{
+			@include breakpoint($point) {
+				float: $align;
+				width: calc(100%/12 * #{nth($columns, $i + 1)} );
+			}
+		}
+	}
 }
 
 // POSITION - Place element
 // ======================================================================
+@mixin position ($position, $args: NULL){
+	position: $position;
 
+	$sides: top right bottom left;
+	@each $side in $sides {
+		$i: index($args, $side);
+		@if $i
+		and length($args) > $i
+		and type-of( nth($args, $i + 1) ) == number {
+			#($side): nth($args, $i + 1);
+		}
+	}
+}
 
 // BREAKPOINTS - Dynamic media queries, mobile first
 // ======================================================================
 
 @mixin breakpoint ($point) {
-	@media (min-width: $point) {
+	@media (min-width: map-get($breakpoints, $point)) {
 		@content;
 	}
 }

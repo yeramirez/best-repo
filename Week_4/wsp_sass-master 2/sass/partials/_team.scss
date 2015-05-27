@@ -9,7 +9,7 @@ TEAM
 #team article {
 
 	padding: 20px;
-	@include colspan(3);
+	//@include colspan();
 
 
 	img {
