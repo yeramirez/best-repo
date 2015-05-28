@@ -18,21 +18,18 @@ input, textarea {
 }
 
 section:first-of-type {
-  float: left;
-  width: 460px;
+  width: 45%;
   height: 344px;
-  margin: 30px;
 }
 
 section:last-of-type {
   float: right;
-  width: 430px;
+  width: 45%;
   height: 240;
-  margin: 30px;
 }
 
 h4 {
-  color: #FFFFFF;
+  color: #f1f1f1;
   margin-bottom: 0px;
 }
 
@@ -49,6 +46,6 @@ div:nth-child(2) {
   float: right;
 }
 
-#post {
+div:nth-child(2)::after {
   clear: both;
 }

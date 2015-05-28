@@ -9,23 +9,26 @@
     margin:  30px auto;
     width: 1000px;
   }
+  
   .container > div {
     width: 33%;
     text-align: center;
   }
+
   .col1 {
     float: left;
   }
+
   .col2 {
     float: right;
   }
+
   .col3 {
     margin: auto;
   }
 
   img {
     height: 150px;
-
   }
 
   p {
