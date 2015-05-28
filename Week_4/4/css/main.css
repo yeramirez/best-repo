@@ -1,0 +1,64 @@
+body {
+  font-family: 'Avenir', sans-serif;
+  width: 100%;
+  background-color: #F3F3F3;
+}
+
+section {
+  max-width: 348px;
+  height: 370px;
+  margin: 0 auto;
+}
+
+h1 {
+  background: url(../img/evernote.png) no-repeat center top;
+  padding-top: 150px;
+  text-align: center;
+  font-family: 'Adobe Chaparrel Pro', serif;
+}
+
+form {
+  background-color: #FFFFFF;
+  padding: 32px;
+  width: 320px;
+  height: 306px;
+  font-size: 75%;
+  color: #747474;
+  border: 1px solid #DEDEDE;
+  margin: 0 auto;
+}
+
+#input {
+  padding: 9.5px 12px;
+  border: 1px solid #DEDEDE;
+  width: 294px;
+  height: 19px;
+}
+
+.row {
+  width: 320px
+  height: 77px;
+  margin-bottom: 24px;
+}
+
+h1 {
+  color: #2DBE60;
+}
+
+#submit {
+  border: 3px solid #2DBE60;
+  background-color: #2DBE60;
+  width: 320px;
+  height: 44px;
+  color: #FFFFFF;
+  font-family: 'Avenir';
+  font-size: 1.1em;
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  color: #2DBE60;
+}

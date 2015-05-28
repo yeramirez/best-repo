@@ -1,0 +1,26 @@
+body {
+  width: 100%;
+  background-color: #5CB8EC;
+  font-family: 'Arial Rounded MT Bold';
+  color: #FFFFFF;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.3em;
+}
+
+section {
+  width: 510px;
+  padding-left: 150px;
+}
+
+a {
+  background-color: #E85C73;
+  border: 3px solid #E85C73;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-family: 'Arial', serif;
+  color: #FFFFFF;
+  text-decoration: none;
+}

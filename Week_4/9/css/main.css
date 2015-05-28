@@ -1,0 +1,38 @@
+body {
+  font-family: 'Avenir', serif;
+  background: #3e3732;
+  color: #FFFFFF;
+}
+
+header {
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+ul {
+  padding-left: 0px;
+  text-align: center;
+}
+
+li {
+  display: inline;
+  text-decoration: none;
+  padding: 25px;
+  font-size: .9em;
+}
+
+img {
+  height: 50px;
+  margin-bottom: -25px;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+p {
+  text-align: center;
+  margin-top: 50px;
+}

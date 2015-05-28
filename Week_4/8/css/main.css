@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  width: 100%;
+  background-color: #395363;
+  font-family: 'Arial';
+  color: #B3C1C9;
+}
+
+input, textarea {
+  width: 220px;
+  height: 45px;
+  font-family: 'Helvetica Neue';
+  text-transform: uppercase;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid white;
+  margin: 10px;
+}
+
+section:first-of-type {
+  float: left;
+  width: 460px;
+  height: 344px;
+  margin: 30px;
+}
+
+section:last-of-type {
+  float: right;
+  width: 430px;
+  height: 240;
+  margin: 30px;
+}
+
+h4 {
+  color: #FFFFFF;
+  margin-bottom: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #B3C1C9;
+}
+
+div:first-of-type {
+  float: left;
+}
+
+div:nth-child(2) {
+  float: right;
+}
+
+#post {
+  clear: both;
+}

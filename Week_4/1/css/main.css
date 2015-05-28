@@ -1,0 +1,34 @@
+body {
+  font-family: 'Old Standard TT', serif;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+nav {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 85%;
+  text-transform: uppercase;
+}
+
+nav a {
+  padding: 2%;
+}
+
+#wishlist {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+a:hover {
+  color: #f9f9f9;
+  text-decoration: underline;
+}

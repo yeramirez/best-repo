@@ -1,0 +1,50 @@
+@media only screen and (min-width: 950px) and (max-width: 3440px) {
+  body {
+    background-color: #ebebeb;
+    margin: 0;
+    width: 100%;
+  }
+
+  .container {
+    margin:  30px auto;
+    width: 1000px;
+  }
+  .container > div {
+    width: 33%;
+    text-align: center;
+  }
+  .col1 {
+    float: left;
+  }
+  .col2 {
+    float: right;
+  }
+  .col3 {
+    margin: auto;
+  }
+
+  img {
+    height: 150px;
+
+  }
+
+  p {
+    font-family: 'Montserrat', serif;
+  }
+
+  button {
+    height: 14px;
+    width: 74px;
+    padding: 10px 50px;
+    margin-bottom: 8px;
+    background-color: #EBEBEB;
+    border: 1px solid #D6D5D4;
+    text-align: center;
+  }
+
+  button:hover {
+    height: 14px;
+    width: 74px;
+    border: 1px solid #7B4396;
+  }
+}
