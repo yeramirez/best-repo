@@ -1,7 +1,7 @@
 body {
   margin: 0;
   width: 100%;
-  background-color: #395363;
+  background-color: #182c39;
   font-family: 'Arial';
   color: #B3C1C9;
 }
@@ -15,16 +15,18 @@ input, textarea {
   padding-right: 10px;
   border: 2px solid white;
   margin: 10px;
+  background-color: #395363;
 }
 
 section:first-of-type {
-  width: 45%;
+  width: 35%;
   height: 344px;
+  float: left;
 }
 
 section:last-of-type {
-  float: right;
-  width: 45%;
+  float: left;
+  width: 35%;
   height: 240;
 }
 
