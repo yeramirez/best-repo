@@ -24,6 +24,7 @@ STRUCTURE
 	}
 }
 
+/*
 // COLUMN SPAN - Twelve column grid system (container)
 // ======================================================================
 @mixin colspan ($columns, $align: left) {
@@ -43,7 +44,9 @@ STRUCTURE
 		}
 	}
 }
+]*/
 
+/*
 // POSITION - Place element
 // ======================================================================
 @mixin position ($position, $args: NULL){
@@ -59,7 +62,8 @@ STRUCTURE
 		}
 	}
 }
-
+*/
+/*
 // BREAKPOINTS - Dynamic media queries, mobile first
 // ======================================================================
 
@@ -68,7 +72,7 @@ STRUCTURE
 		@content;
 	}
 }
-
+*/
 // TRIANGLE - Border triangle
 // ======================================================================
 @mixin triangle($direction, $size, $color) {
