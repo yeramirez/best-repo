@@ -5,25 +5,25 @@
     width: 100%;
   }
 
-  .container {
+  section {
     margin:  30px auto;
     width: 1000px;
   }
-  
-  .container > div {
+
+  section > article {
     width: 33%;
     text-align: center;
   }
 
-  .col1 {
+  article:first-of-type {
     float: left;
   }
 
-  .col2 {
+  article:nth-child(2) {
     float: right;
   }
 
-  .col3 {
+  article:nth-child(3) {
     margin: auto;
   }
 

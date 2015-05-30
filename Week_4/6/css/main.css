@@ -65,6 +65,16 @@
     width: 25%;
   }
 
+  article:nth-child(3) {
+    float: right;
+    width: 25%;
+  }
+
+  article:nth-child(4) {
+    float: right;
+    width: 25%;
+  }
+
   article {
     border: 1px solid red;
   }
